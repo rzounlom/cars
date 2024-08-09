@@ -4,7 +4,9 @@ import { removeCar } from "../store";
 
 function CarList() {
   const dispatch = useDispatch();
-  const { cars } = useSelector((state) => state.cars);
+  const cars = useSelector(({ cars: { cars, searchTerm } }) =>
+    cars.filter((car) => car.name.includes(searchTerm))
+  );
 
   const handleRemoveCar = (id) => {
     dispatch(removeCar(id));
