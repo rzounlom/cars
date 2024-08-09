@@ -1,4 +1,5 @@
-import "./index.css";
+import "bulma/css/bulma.css";
+import "./styles.css";
 
 import App from "./App";
 import { Provider } from "react-redux";
