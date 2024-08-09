@@ -11,9 +11,8 @@ const carSlice = createSlice({
       state.searchTerm = action.payload;
     },
     addCar(state, action) {
-      state.cost.push({
-        name: action.payload.name,
-        cost: action.payload.cost,
+      state.cars.push({
+        ...action.payload,
         id: nanoid(),
       });
     },

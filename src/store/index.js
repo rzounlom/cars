@@ -1,5 +1,10 @@
-import { addCar, carReducer, changeSearchTerm, removeCar } from "./carsSlice";
-import { changeCost, changeName, formReducer } from "./formSlice";
+import {
+  addCar,
+  carReducer,
+  changeSearchTerm,
+  removeCar,
+} from "./slices/carsSlice";
+import { changeCost, changeName, formReducer } from "./slices/formSlice";
 
 import { configureStore } from "@reduxjs/toolkit";
 
